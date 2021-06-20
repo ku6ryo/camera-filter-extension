@@ -45,8 +45,7 @@ export function addVirtualCamera() {
         }
       }
     }
-    const res = await getUserMediaFn.call(navigator.mediaDevices, ...arguments)
-    return res;
+    return await getUserMediaFn.call(navigator.mediaDevices, ...arguments)
   }
 
   console.log('VIRTUAL WEBCAM INSTALLED.')
